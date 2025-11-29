@@ -7,6 +7,7 @@ export default defineConfig({
     alias: {
       "@": "/src",
     },
+    extensions: [".js", ".jsx", ".ts", ".tsx"],
   },
   server: {
     allowedHosts: ["e6bbf1ed5282.ngrok-free.app", "localhost", "127.0.0.1"],
