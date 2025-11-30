@@ -1,18 +1,18 @@
 import "./index.css";
-import { Navbar } from "./components/Navbar";
-import { HeroSection } from "./components/HeroSection";
-import { ProblemSolution } from "./components/ProblemSolution";
-import { DemoPreview } from "./components/DemoPreview";
-import { Team } from "./components/Team";
-import { WhyOurTeam } from "./components/WhyOurTeam";
-import { TeamMotivation } from "./components/TeamMotivation";
-import { Roadmap } from "./components/Roadmap";
-import { MilestonesMetrics } from "./components/MilestonesMetrics";
-import { TechnicalImplementation } from "./components/TechnicalImplementation";
-import { HowAIPowersHelpAI } from "./components/HowAIPowersHelpAI";
-import { DevelopmentApproach } from "./components/DevelopmentApproach";
-import { InnovationStrategy } from "./components/InnovationStrategy";
-import { Footer } from "./components/Footer";
+import { Navbar } from "./src/components/Navbar";
+import { HeroSection } from "./src/components/HeroSection";
+import { ProblemSolution } from "./src/components/ProblemSolution";
+import { DemoPreview } from "./src/components/DemoPreview";
+import { Team } from "./src/components/Team";
+import { WhyOurTeam } from "./src/components/WhyOurTeam";
+import { TeamMotivation } from "./src/components/TeamMotivation";
+import { Roadmap } from "./src/components/Roadmap";
+import { MilestonesMetrics } from "./src/components/MilestonesMetrics";
+import { TechnicalImplementation } from "./src/components/TechnicalImplementation";
+import { HowAIPowersHelpAI } from "./src/components/HowAIPowersHelpAI";
+import { DevelopmentApproach } from "./src/components/DevelopmentApproach";
+import { InnovationStrategy } from "./src/components/InnovationStrategy";
+import { Footer } from "./src/components/Footer";
 
 function App() {
   return (
