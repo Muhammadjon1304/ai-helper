@@ -1,4 +1,5 @@
 import "./index.css";
+import { Navbar } from "./components/Navbar";
 import { HeroSection } from "./components/HeroSection";
 import { ProblemSolution } from "./components/ProblemSolution";
 import { DemoPreview } from "./components/DemoPreview";
@@ -15,21 +16,34 @@ import { Footer } from "./components/Footer";
 
 function App() {
   return (
-    <main className="w-full min-h-screen">
-      <HeroSection />
-      <ProblemSolution />
-      <DemoPreview />
-      <Team />
-      <WhyOurTeam />
-      <TeamMotivation />
-      <Roadmap />
-      <MilestonesMetrics />
-      <TechnicalImplementation />
-      <HowAIPowersHelpAI />
-      <DevelopmentApproach />
-      <InnovationStrategy />
-      <Footer />
-    </main>
+    <>
+      <Navbar />
+      <main className="w-full min-h-screen pt-16">
+        <HeroSection />
+        <div id="problem">
+          <ProblemSolution />
+        </div>
+        <div id="solution">
+          <DemoPreview />
+        </div>
+        <div id="team">
+          <Team />
+          <WhyOurTeam />
+          <TeamMotivation />
+        </div>
+        <div id="roadmap">
+          <Roadmap />
+          <MilestonesMetrics />
+        </div>
+        <div id="technical">
+          <TechnicalImplementation />
+          <HowAIPowersHelpAI />
+          <DevelopmentApproach />
+          <InnovationStrategy />
+        </div>
+        <Footer />
+      </main>
+    </>
   );
 }
 
