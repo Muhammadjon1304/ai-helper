@@ -13,43 +13,14 @@ export function ProblemSolution() {
             </div>
 
             <p className="text-gray-700 mb-6 leading-relaxed">
-              More than 40,000 cases of gender-based violence occur annually in Uzbekistan, with the majority of victims being women and children.
+              In 2024, the number of crimes reported in Uzbekistan were 132,298,
+              and more than 40.000 of them were gender based violence.
             </p>
 
             <p className="text-gray-700 mb-6 leading-relaxed">
-              Teenagers and youth face bullying, abuse, stalking, and other crimes at schools, streets, and homes.
-            </p>
-
-            <div className="bg-gray-50 border-l-4 border-primary p-6 mb-6 rounded">
-              <h3 className="font-bold text-gray-900 mb-4">
-                The Reality: Most victims don't report unless it's near-death situations because:
-              </h3>
-              <ul className="space-y-3 text-gray-700">
-                <li className="flex items-start gap-3">
-                  <span className="text-primary font-bold mt-1">•</span>
-                  <span>Fear that speaking up won't help</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-primary font-bold mt-1">•</span>
-                  <span>Intimidation by police officers</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-primary font-bold mt-1">•</span>
-                  <span>Teenagers fear unsupportive parents</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-primary font-bold mt-1">•</span>
-                  <span>Lack of knowledge about their rights</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-primary font-bold mt-1">•</span>
-                  <span>High costs of lawyers and psychologists</span>
-                </li>
-              </ul>
-            </div>
-
-            <p className="text-gray-900 font-semibold">
-              Women tolerate psychological and physical abuse. Young girls blame themselves when harassed. Teenage boys try to fight bullies alone. <span className="font-bold">They suffer in silence.</span>
+              Women, children and youth face bullying, abuse, stalking and other
+              crimes at schools, streets, and homes. Or normal people face
+              problems where they don't know their rights and what to do.
             </p>
           </div>
 
@@ -63,7 +34,10 @@ export function ProblemSolution() {
             </div>
 
             <p className="text-gray-700 mb-8 leading-relaxed">
-              <span className="font-bold text-gray-900">HelpAI</span> is an AI-powered platform that provides instant, free, and anonymous legal advice and psychological support to victims of gender-based violence.
+              <span className="font-bold text-gray-900">HelpAI</span> is an
+              AI-powered platform that provides instant, free, and personalized
+              legal advice and psychological support to victims of violence and
+              different problems.
             </p>
 
             <div className="bg-primary rounded-lg p-8 text-white mb-8">
@@ -79,7 +53,9 @@ export function ProblemSolution() {
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="font-bold text-lg min-w-fit">3.</span>
-                  <span>Instantly receives personalized psychological support</span>
+                  <span>
+                    Instantly receives personalized psychological support
+                  </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="font-bold text-lg min-w-fit">4.</span>
@@ -93,7 +69,9 @@ export function ProblemSolution() {
             </div>
 
             <div className="bg-gray-50 border-l-4 border-primary p-6 rounded">
-              <h3 className="font-bold text-gray-900 mb-4">AI Knowledge Base:</h3>
+              <h3 className="font-bold text-gray-900 mb-4">
+                AI Knowledge Base:
+              </h3>
               <ul className="space-y-3 text-gray-700">
                 <li className="flex items-start gap-3">
                   <span className="text-primary font-bold mt-1">•</span>
@@ -101,7 +79,9 @@ export function ProblemSolution() {
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary font-bold mt-1">•</span>
-                  <span>Psychological advice from trusted international sources</span>
+                  <span>
+                    Psychological advice from trusted international sources
+                  </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary font-bold mt-1">•</span>
@@ -109,7 +89,9 @@ export function ProblemSolution() {
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary font-bold mt-1">•</span>
-                  <span>Available 24/7 in multiple languages</span>
+                  <span>
+                    Available 24/7 in Uzbek, Russian, and English languages
+                  </span>
                 </li>
               </ul>
             </div>
@@ -117,5 +99,5 @@ export function ProblemSolution() {
         </div>
       </div>
     </section>
-  )
+  );
 }

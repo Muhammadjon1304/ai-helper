@@ -110,22 +110,6 @@ export function TeamMotivation() {
             </ul>
           </div>
         </div>
-
-        {/* Previous Experience Section */}
-        <div className="bg-red-800 rounded-2xl p-12 text-white text-center">
-          <h3 className="text-3xl font-bold mb-6">Previous Experience</h3>
-          <p className="text-lg leading-relaxed mb-6 max-w-4xl mx-auto">
-            Our team has worked on similar social impact projects, including
-            community safety applications, educational platforms for underserved
-            populations, and AI-powered legal tech solutions. We understand the
-            unique challenges of building technology for vulnerable users and
-            have the experience to create solutions that are both powerful and
-            accessible.
-          </p>
-          <p className="text-xl font-semibold italic">
-            We're not just building an app — we're building a lifeline.
-          </p>
-        </div>
       </div>
     </section>
   );

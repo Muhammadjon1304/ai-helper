@@ -8,54 +8,75 @@ interface TeamMember {
     linkedin?: string;
     github?: string;
     website?: string;
+    x?: string;
+    substack?: string;
   };
 }
 
 const teamMembers: TeamMember[] = [
   {
     id: 1,
-    name: "Your Name",
-    role: "Project Lead & AI Specialist",
-    description:
-      "Passionate about using AI for social good. Experience in machine learning and natural language processing.",
-    skills: ["Python", "TensorFlow", "NLP", "LangChain"],
-    socialLinks: {
-      linkedin: "#",
-      github: "#",
-    },
-  },
-  {
-    id: 2,
-    name: "Team Member 2",
+    name: "Muhammadjon Parpiyev",
     role: "Full-Stack Developer",
     description:
       "Experienced in building scalable web applications with focus on user experience and security.",
     skills: ["React", "Node.js", "PostgreSQL", "AWS"],
     socialLinks: {
-      linkedin: "#",
-      github: "#",
+      github: "https://github.com/muhammadjon1304",
+    },
+  },
+  {
+    id: 2,
+    name: "Guljamal Baymurzaeva",
+    role: "Legal & Psychological Researcher",
+    description:
+      "Author of 'Uzbekistan's Economic Transition from Central to Market Economy,' mentored by Prof. Jong Kim (Emory University) through Pioneer Academics; received A- and 4 college credits from Oberlin College. Research assistant to Dr. Mirzo Zokirov at TSUE, contributing data analysis for research on the book 'Why Nations Fail.'",
+    skills: [
+      "Legal Research",
+      "Data Analysis",
+      "Economic Research",
+      "Academic Writing",
+    ],
+    socialLinks: {
+      linkedin: "https://www.linkedin.com/in/guljamal-baymurzaeva",
     },
   },
   {
     id: 3,
-    name: "Team Member 3",
-    role: "Legal Researcher & Data Specialist",
+    name: "Muxlisa Abduaxatova",
+    role: "Project Manager",
     description:
-      "Background in law and human rights. Focused on making legal knowledge accessible to all.",
-    skills: ["Legal Research", "Data Analysis", "Content Curation"],
+      "Self-Defense Camp for Women and Girls Alumni, by US Embassy. Trained in Women Empowerment with Phd psychologist Gulnora Bogdalova, and Legal Literacy by Human Rights lawyer Dilfuza Kuralova, supported by US Embassy. Former Consultant and Sales Manager at RIKS Education and EuroLink consulting, with 2 years of experience in managing people. Current Legal Assistant to lawyer Alan Pashovskiy in Acceptus legal firm.",
+    skills: [
+      "Project Management",
+      "Team Leadership",
+      "Legal Assistance",
+      "Women Empowerment",
+      "Legal Literacy",
+    ],
     socialLinks: {
-      linkedin: "#",
+      linkedin: "https://www.linkedin.com/in/muxlisa-abduaxatova-6ab875360/",
     },
   },
   {
     id: 4,
-    name: "Team Member 4",
-    role: "UI/UX Designer",
+    name: "Imamatdin Sultaniyazov",
+    role: "AI Engineer",
     description:
-      "Dedicated to creating trauma-informed, accessible interfaces for vulnerable populations.",
-    skills: ["Figma", "User Research", "Accessibility Design"],
+      "TKS Innovate'25; Activate'26. Student accelerator, got $9k in aid to study and build with top students in the world. FII Nexus AI fellow: worked on 16 AI projects and trained a custom ML model.",
+    skills: [
+      "Machine Learning",
+      "AI Development",
+      "Custom ML Models",
+      "Python",
+      "Deep Learning",
+    ],
     socialLinks: {
-      website: "#",
+      x: "https://x.com/Imamatdin_S",
+      substack: "https://www.substack.com/@imamatdinsultaniyazov",
+      linkedin: "https://www.linkedin.com/in/imamatdin-sultaniyazov",
+      website: "https://imamatdin.com",
+      github: "https://github.com/Imamatdin",
     },
   },
 ];
@@ -93,6 +114,28 @@ const GlobeIcon = () => (
   </svg>
 );
 
+const XIcon = () => (
+  <svg
+    className="w-5 h-5"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+  </svg>
+);
+
+const SubstackIcon = () => (
+  <svg
+    className="w-5 h-5"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z" />
+  </svg>
+);
+
 export function Team() {
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
@@ -126,10 +169,12 @@ export function Team() {
                   </p>
                 </div>
                 {/* Social Icons */}
-                <div className="flex gap-2">
+                <div className="flex gap-2 flex-wrap">
                   {member.socialLinks?.linkedin && (
                     <a
                       href={member.socialLinks.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="text-gray-400 hover:text-gray-600 transition-colors"
                       aria-label="LinkedIn"
                     >
@@ -139,6 +184,8 @@ export function Team() {
                   {member.socialLinks?.github && (
                     <a
                       href={member.socialLinks.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="text-gray-400 hover:text-gray-600 transition-colors"
                       aria-label="GitHub"
                     >
@@ -148,10 +195,34 @@ export function Team() {
                   {member.socialLinks?.website && (
                     <a
                       href={member.socialLinks.website}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="text-gray-400 hover:text-gray-600 transition-colors"
                       aria-label="Website"
                     >
                       <GlobeIcon />
+                    </a>
+                  )}
+                  {member.socialLinks?.x && (
+                    <a
+                      href={member.socialLinks.x}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-400 hover:text-gray-600 transition-colors"
+                      aria-label="X (Twitter)"
+                    >
+                      <XIcon />
+                    </a>
+                  )}
+                  {member.socialLinks?.substack && (
+                    <a
+                      href={member.socialLinks.substack}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-400 hover:text-gray-600 transition-colors"
+                      aria-label="Substack"
+                    >
+                      <SubstackIcon />
                     </a>
                   )}
                 </div>
