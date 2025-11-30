@@ -18,9 +18,8 @@ export function ProblemSolution() {
             </p>
 
             <p className="text-gray-700 mb-6 leading-relaxed">
-              Women, children and youth face bullying, abuse, stalking and other
-              crimes at schools, streets, and homes. Or normal people face
-              problems where they don't know their rights and what to do.
+              Some might report the police or tell their parents. But, let's be honest, most of them don't even report, unless it's near death, because they fear speaking up won't help. They're shy of police officers, or teenagers might fear to tell their parents, because they may not have been supportive before. 
+So, they just go silent. Young girls hate themselves when men harass them instead of reporting to someone. Teenage boys try to fight the bullies at school themselves. Or women keep tolerating psychological and physical abuse from their husbands. Because they may not know their rights and lack the courage. Or people just second guess the decisions with risking the unwanted outcomes.
             </p>
           </div>
 

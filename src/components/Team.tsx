@@ -79,6 +79,24 @@ const teamMembers: TeamMember[] = [
       github: "https://github.com/Imamatdin",
     },
   },
+  {
+    id: 5,
+    name: "Madina Nasimova",
+    role: "Junior Backend Developer",
+    description:
+      "Creator of Web Application for vocabulary studies to eliminate platform limitations and high costs. Winner of 2 start-up competitions, where pitched own CRM system and educational platform projects. Created personal bot for fast food company. Mastered the courses of Python, Django, Aiogram, and SQLite.",
+    skills: [
+      "Python",
+      "Django",
+      "Aiogram",
+      "SQLite",
+      "Bot Development",
+      "Backend Development",
+    ],
+    socialLinks: {
+      github: ""
+    },
+  },
 ];
 
 const LinkedinIcon = () => (

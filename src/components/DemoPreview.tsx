@@ -1,5 +1,21 @@
 import { useState } from "react";
 
+const SendIcon = () => (
+  <svg
+    className="w-5 h-5"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <line x1="22" y1="2" x2="11" y2="13" />
+    <polygon points="22 2 15 22 11 13 2 9 22 2" />
+  </svg>
+);
+
 export function DemoPreview() {
   const [messages, setMessages] = useState<
     { type: "ai" | "user"; text: string }[]
@@ -83,9 +99,9 @@ export function DemoPreview() {
                 />
                 <button
                   onClick={handleSend}
-                  className="bg-primary hover:bg-primary-dark text-white p-2 rounded-lg transition-colors"
+                  className="bg-primary hover:bg-primary-dark text-white p-3 rounded-lg transition-colors flex items-center justify-center"
                 >
-                  <span className="text-xl">✈️</span>
+                  <SendIcon />
                 </button>
               </div>
             </div>

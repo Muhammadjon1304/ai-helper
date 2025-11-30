@@ -34,7 +34,7 @@ const phases: Phase[] = [
   {
     id: 2,
     title: "Phase 2: MVP Development",
-    description: "Current - December 2024",
+    description: "Current - December 2025",
     status: "current",
     items: [
       "Legal knowledge base creation (Uzbekistan laws)",
